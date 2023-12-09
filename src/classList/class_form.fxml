@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="classList.ClassFormController">
+   <children>
+      <Text layoutX="141.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Class Information Editor" textAlignment="CENTER" wrappingWidth="576.21630859375">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <TextField fx:id="ipClassName" layoutX="39.0" layoutY="65.0" prefHeight="33.0" prefWidth="247.0" promptText="Tên Lớp">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ipPhongHoc" layoutX="39.0" layoutY="123.0" prefHeight="33.0" prefWidth="247.0" promptText="Phòng Học">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="ipMaLop" layoutX="39.0" layoutY="184.0" prefHeight="33.0" prefWidth="247.0" promptText="Mã Lớp">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button defaultButton="true" layoutX="129.0" layoutY="375.0" mnemonicParsing="false" onAction="#submit" prefHeight="33.0" prefWidth="118.0" text="Submit" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Text layoutX="363.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information" wrappingWidth="132.21630859375">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+
+      <DatePicker fx:id="ipStartDate" layoutX="38.0" layoutY="246.0" prefHeight="33.0" prefWidth="247.0" promptText="Ngày Bắt Đầu" />
+      <ListView fx:id="listView" layoutX="351.0" layoutY="117.0" prefHeight="461.0" prefWidth="437.0" onMouseClicked="#openEditDialog" />
+      <ComboBox fx:id="myComboBox" editable="true" layoutX="38.0" layoutY="307.0" prefHeight="31.0" prefWidth="190.0" promptText="Tên Chương Trình" />
+
+   </children>
+</Pane>
